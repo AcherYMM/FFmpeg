@@ -4,7 +4,7 @@
 
 # ffmpeg命令分类查询
 
- ![](.\pic\2023-03-23-10-29-08-image.png)
+ ![2](.\pic\2023-03-23-10-29-08-image.png)
 
 查看具体分类所支持的参数：ffmpeg -h type=name
 
@@ -12,7 +12,7 @@ eg:ffmpeg -h muxer=flv
 
 # ffplay播放控制
 
-![](.\pic\2023-03-23-10-55-46-image.png)
+![3](./pic/2023-03-23-10-55-46-image.png)
 
 播放一个视频：ffplay -volume
 
