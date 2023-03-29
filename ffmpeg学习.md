@@ -4,7 +4,7 @@
 
 # ffmpeg命令分类查询
 
- ![2](.\pic\2023-03-23-10-29-08-image.png)
+ ![2](./pic/2023-03-23-10-29-08-image.png)
 
 查看具体分类所支持的参数：ffmpeg -h type=name
 
@@ -20,7 +20,7 @@ eg:ffplay -volume 10 av1.mp4
 
 # ffmpeg命令选项
 
-![](.\pic\2023-03-23-11-05-30-image.png)
+![4](./pic/2023-03-23-11-05-30-image.png)
 
 宽高：ffplay -volume 10 -x 800 -y 480 av1.mp4
 
@@ -28,79 +28,79 @@ eg:ffplay -volume 10 av1.mp4
 
 从第10秒开始播放10s：ffplay -volume 10 -x 800 -y 480 -ss 00:00:10 -t 10 av1.mp4
 
-![](.\pic\2023-03-23-11-13-26-image.png)
+![5](./pic/2023-03-23-11-13-26-image.png)
 
-![](.\pic\2023-03-23-11-15-06-image.png)
+![6](./pic/2023-03-23-11-15-06-image.png)
 
-![](.\pic\2023-03-23-11-44-14-image.png)
+![7](./pic/2023-03-23-11-44-14-image.png)
 
-![](.\pic\2023-03-23-11-53-02-image.png)
+![8](./pic/2023-03-23-11-53-02-image.png)
 
 # ffplay播放命令
 
-![](.\pic\2023-03-23-12-26-41-image.png)
+![9](./pic/2023-03-23-12-26-41-image.png)
 
 重点：
 
-![](.\pic\2023-03-23-12-33-27-image.png)
+![10](./pic/2023-03-23-12-33-27-image.png)
 
 # ffplay简单过滤器
 
-![](.\pic\2023-03-23-12-42-03-image.png)
+![11](./pic/2023-03-23-12-42-03-image.png)
 
 更多过滤器：www.ffmpeg.org/ffmpeg-filters.html
 
 # ffmpeg命令参数说明
 
-  ![](.\pic\2023-03-23-13-10-08-image.png)
+  ![12](./pic/2023-03-23-13-10-08-image.png)
 
 # ffmpeg命令提取音视频数据
 
-![](.\pic\2023-03-23-13-28-03-image.png)
+![13](./pic/2023-03-23-13-28-03-image.png)
 
 # ffmpeg命令提取像素格式
 
-![](.\pic\2023-03-23-13-29-15-image.png)
+![14](./pic/2023-03-23-13-29-15-image.png)
 
 # ffmpeg命令提取PCM数据
 
-![](.\pic\2023-03-23-16-51-58-image.png)
+![15](./pic/2023-03-23-16-51-58-image.png)
 
 .wav格式有头部数据，.pcm数据是裸数据。
 
 # ffmpeg命令转封装
 
-![](.\pic\2023-03-23-17-09-30-image.png)
+![16](./pic/2023-03-23-17-09-30-image.png)
 
 修改视频码率不改变音频则加上 -acodec copy
 
 ffmpeg -i av1.mp4 -b 400k -acodec copy output_b1.mkv
 
-![](.\pic\2023-03-23-17-18-33-image.png)
+![17](./pic/2023-03-23-17-18-33-image.png)
 
 # ffmpeg明令裁剪和合并视频
 
-![](.\pic\2023-03-23-22-55-31-image.png)
+![18](./pic/2023-03-23-22-55-31-image.png)
 
-![](.\pic\2023-03-23-22-56-05-image.png)
+![19](./pic/2023-03-23-22-56-05-image.png)
 
 测试不同编码拼接：
 
-![](.\pic\2023-03-23-22-57-09-image.png)
+![20](./pic/2023-03-23-22-57-09-image.png)
 
 测试结果：
 
-![](.\pic\2023-03-23-22-57-24-image.png)
+![21](./pic/2023-03-23-22-57-24-image.png)
 
 #### 注意：拼接时把视频封装格式统一为ts流，拼接输出时再输出你需要的封装格式，比如MP4.
 
 # ffmpeg命令图片和视频转换
 
-![](.\pic\2023-03-23-23-22-55-image.png)
+![22](./pic/2023-03-23-23-22-55-image.png)
 
 图片转为视频图片命名格式要相同！
 
-![](.\pic\2023-03-23-23-23-29-image.png)
+![23](./pic/2023-03-23-23-23-29-image.png)
 
 # ffmpeg命令录制视频
 
@@ -108,7 +108,7 @@ ffmpeg -i av1.mp4 -b 400k -acodec copy output_b1.mkv
 
 查询方法：ffmpeg -list_devices true -f dshow -i dummy
 
-![](.\pic\2023-03-23-23-43-53-image.png)
+![24](./pic/2023-03-23-23-43-53-image.png)
 
 摄像头：无
 
@@ -120,7 +120,7 @@ ffmpeg -i av1.mp4 -b 400k -acodec copy output_b1.mkv
 
 系统声录制设备："virtual-audio-capturer"
 
-![](.\pic\2023-03-24-00-14-50-image.png)
+![25](./pic/2023-03-24-00-14-50-image.png)
 
 复杂过滤器模式：
 
@@ -136,11 +136,11 @@ ffmpeg -f dshow -i audio="麦克风 (Realtek(R) Audio)" -f dshow -i audio="virtu
 
 视频命令：ffmpeg -f dshow -list_options true -i video="screen-capture-recorder"
 
-![](.\pic\2023-03-24-00-20-06-image.png)
+![26](./pic/2023-03-24-00-20-06-image.png)
 
 音频命令：ffmpeg -f dshow -list_options true -i audio="virtual-audio-capturer"
 
-![](.\pic\2023-03-24-00-22-23-image.png)
+![27](./pic/2023-03-24-00-22-23-image.png)
 
 ！！！
 
@@ -156,7 +156,7 @@ mix在一起；最后一个“-f dshow”是视频流，可在其后设置参数
 
 咪咕视频·PP体育1:http://39.134.65.162/PLTV/88888888/224/3221225611/index.m3u8
 
-![](.\pic\2023-03-24-01-28-01-image.png)
+![28](./pic/2023-03-24-01-28-01-image.png)
 
 # ffmpeg过滤器
 
@@ -168,23 +168,23 @@ crop=输入宽：输入高：x轴起始位置：y轴起始位置
 
 ### 1.5、ffmpeg滤镜内置变量
 
-![](.\pic\2023-03-24-12-15-32-image.png)
+![29](./pic/2023-03-24-12-15-32-image.png)
 
 ### 2、水印
 
-![](.\pic\2023-03-24-12-18-37-image.png)
+![30](./pic/2023-03-24-12-18-37-image.png)
 
 基本功能
 
-![](.\pic\2023-03-24-12-32-01-image.png)
+![31](./pic/2023-03-24-12-32-01-image.png)
 
 ffplay -i av1.mp4 -volume 10 -x 600 -y 480 -vf "drawtext=fontsize=100:fontfile=FreeSerif.ttf:text='hello world':fontcolor=green:x=400:y=200:alpha=0.3:box=1:boxcolor=yellow"
 
 特殊用法：
 
-![](.\pic\2023-03-24-12-38-18-image.png)
+![32](./pic/2023-03-24-12-38-18-image.png)
 
-![](.\pic\2023-03-24-12-41-50-image.png)
+![33](./pic/2023-03-24-12-41-50-image.png)
 
 ffplay -i av1.mp4 -volume 10 -x 600 -y 480 -vf "drawtext=fontsize=100:fontfile=FreeSerif.ttf:text='hello world':fontcolor=green:x=mod(50*t\,w):y=abs(sin(t))*h*0.7:alpha=0.3:box=1:boxcolor=yellow:enable=lt(mod(t\,3)\,1)" 
 
@@ -192,25 +192,25 @@ ffplay -i av1.mp4 -volume 10 -x 600 -y 480 -vf "drawtext=fontsize=100:fontfile=F
 
 命令：movie和overlay
 
-![](.\pic\2023-03-24-12-52-20-image.png)
+![34](./pic/2023-03-24-12-52-20-image.png)
 
-![](.\pic\2023-03-24-12-56-07-image.png)
+![35](./pic/2023-03-24-12-56-07-image.png)
 
-![](.\pic\2023-03-24-13-09-45-image.png)
+![36](./pic/2023-03-24-13-09-45-image.png)
 
 ffplay -i av1.mp4 -volume 10 -x 600 -y 480 -vf "movie=logo.jpg[watermark];[in][watermark]overlay=mod(50*t\,main_w):y=abs(sin(t))*h*0.7[out]"
 
 ### 4、画中画
 
-![](.\pic\2023-03-24-13-15-13-image.png)
+![37](./pic/2023-03-24-13-15-13-image.png)
 
-![](.\pic\2023-03-24-13-25-35-image.png)
+![38](./pic/2023-03-24-13-25-35-image.png)
 
 ffplay -i av1.mp4 -vf "movie=av2.mp4,scale=480x270[sub];[in][sub]overlay=20:20:eof_action=2"
 
 ### 5、多宫格画面
 
-![](.\pic\2023-03-24-13-33-51-image.png)
+![39](./pic/2023-03-24-13-33-51-image.png)
 
 ```c++
 ffmpeg -i 1.mp4 -i 2.mp4 -i 3.mp4 -i 4.mp4
@@ -228,4 +228,4 @@ ffmpeg -i 1.mp4 -i 2.mp4 -i 3.mp4 -i 4.mp4
 ffmpeg -i av1.mp4 -i av1.mp4 -i av1.mp4 -i av1.mp4 -filter_complex "nullsrc=size=640x480[base];[0:v]setpts=PTS-STARTPTS,scale=320x240[upperleft];[1:v]setpts=PTS-STARTPTS,scale=320x240[upperright];[2:v]setpts=PTS-STARTPTS,scale=320x240[lowerleft];[3:v]setpts=PTS-STARTPTS,scale=320x240[lowerright];[base][upperleft]overlay=shortest=1[tmp1];[tmp1][upperright]overlay=shortest=1:x=320[tmp2];[tmp2][lowerleft]overlay=shortest=1:y=240[tmp3];[tmp3][lowerright]overlay=shortest=1:x=320:y=240" out.mp4
 ```
 
-![](.\pic\2023-03-24-13-41-24-image.png)
+![40](./pic/2023-03-24-13-41-24-image.png)
