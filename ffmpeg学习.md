@@ -4,7 +4,7 @@
 
 # ffmpeg命令分类查询
 
- ![](D:\学习\2023-03-23-10-29-08-image.png)
+ ![](D:\git\FFmpeg\pic\2023-03-23-10-29-08-image.png)
 
 查看具体分类所支持的参数：ffmpeg -h type=name
 
