@@ -1,6 +1,6 @@
 # ffmpeg处理流程图
 
-![](D:\git\FFmpeg\pic\2023-03-23-16-53-12-image.png)
+![1](./pic/2023-03-23-16-53-12-image.png)
 
 # ffmpeg命令分类查询
 
